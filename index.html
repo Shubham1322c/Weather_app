@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <script src="https://kit.fontawesome.com/61c214253e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="Container">
+        <form id="form" action="result.html" autocomplete="off" method="get" >
+
+            <label for="location">Enter Your City Name</label>
+                <input type="text" id="location">
+                <input type="submit" value="&#8594">
+        </form>
+    </div>
+    <script>
+   // for internal js in any case
+   // function to store location in localStorage
+const form = document.getElementById('form');
+form.addEventListener('submit', function(event){
+    event.preventDefault();
+    const loc = document.getElementById('location').value;
+    localStorage.setItem('location', loc);
+     window.location.href = form.getAttribute('action') + '?location=' + encodeURIComponent(loc);
+});
+    </script>
+</body>
+</html>
