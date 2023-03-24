@@ -9,3 +9,18 @@ body{
     height: 100vh;
     width: 100vw;
 }
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    transform: translate(-30%, -47%);
+}
+div span{
+    color: var(--white);
+    font-size: 5vw;
+    font-family: var(--font1);
+}
