@@ -22,5 +22,5 @@ A weather app that displays the weather information of a user-provided location 
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
