@@ -1,6 +1,26 @@
 import {API_KEY} from "./config.js"; // import API_KEY 
 //console.log(API_KEY);
 
+var backgrounds = [
+    'url(/images/resultBg1.jpg)',
+    'url(/images/resultBg2.jpg)',
+    'url(/images/resultBg3.jpg)',
+    'url(/images/resultBg4.jpg)',
+    'url(/images/resultBg5.jpg)',
+    'url(/images/resultBg6.jpg)',
+    'url(/images/resultBg7.jpg)'
+];
+
+function changeBackground() {
+    var randomIndex = Math.floor(Math.random() * backgrounds.length);
+    document.body.style.backgroundImage = backgrounds[randomIndex];
+}
+
+// call the function when the page loads
+changeBackground();
+
+
+
 const loc = localStorage.getItem('location');
 document.getElementById("YourCity").innerHTML += loc;
 
