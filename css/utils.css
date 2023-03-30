@@ -3,5 +3,11 @@
 
 :root{
     --font1: 'Rajdhani', sans-serif;
+    --font2: 'Ubuntu', sans-serif;
     --white: #ffffff;
+    --size-heading : 2vw;
+    --size-font: 1vw;
+    --size-mobile-font: 10vw;
+    --font-mobile-px : 8px;
+    --font-mobile-heading : 10px;
 }

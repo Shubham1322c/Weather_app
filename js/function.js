@@ -2,10 +2,14 @@ import {API_KEY} from "./config.js"; // import API_KEY
 //console.log(API_KEY);
 
 const loc = localStorage.getItem('location');
+document.getElementById("YourCity").innerHTML += loc;
+
+
 //console.log(loc);
 
 let lat = '';
 let lon = '';
+
 
 const geoLoc = () => {
     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${loc}&limit=5&appid=${API_KEY}`)

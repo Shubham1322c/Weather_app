@@ -42,7 +42,7 @@ body {
     top: 35%;
     left: 47%;
     transform: translate(-40%, -45%);
-    padding: 2vh 19vw;
+    padding: 2vh 18vw;
 
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.17);
@@ -55,8 +55,8 @@ body {
 
 span {
     color: var(--white);
-    font-size: 1vw;
-    font-family: (--font1);
+    font-size: var(--size-font);
+    font-family: var(--font2);
 }
 
 div i {
@@ -71,7 +71,7 @@ div i {
 
 .popularcity {
     /* border: 2px solid red; */
-    color: aliceblue;
+    color: var(--white);
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -87,7 +87,7 @@ div i {
 .popularcity div{
     display: flex;
     margin: 5px;
-    padding: 3vw 7vh;
+    padding: 3vw 6vh;
     background: rgba(255, 255, 255, 0.17);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -98,7 +98,17 @@ div i {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    font-size: var(--size-font);
+
 }
+.popularcity h2{
+    font-size: var(--size-heading);
+    font-family: var(--font1);
+}
+
+
+
+
 
 .back{
     display: flex;
@@ -108,8 +118,8 @@ div i {
     justify-content: center;
     align-items: stretch;
     position: absolute;
-    top: 80%;
-    left: 47%;
+    top: 81%;
+    left: 46.5%;
     transform: translate(-40%, -45%);
     margin: 10px;
     background: rgba(255, 255, 255, 0.17);
@@ -125,9 +135,10 @@ div i {
     background-color: transparent;
     outline: none;
     cursor: pointer;
-    padding: 1vw 44vh;
-    color: aliceblue;
-    font-size: 18px;
+    padding: 1vw 21vw;
+    color: var(--white);
+    font-size: var(--size-font);
+    font-family: var(--font2);
 }
 .back:hover{
     cursor: pointer;
@@ -135,7 +146,54 @@ div i {
 
 
 
-
+@media screen and (max-width:585px) {
+    .span{
+        font-size: var(--size-mobile-font);
+    }
+    .popularcity{
+        flex-direction: column;
+        top: 53.5%;
+    }
+    .popularcity div{
+        display: flex;
+        margin: 2px;
+        padding: 10px 60px 10px 60px;
+    }
+    
+    .popularcity span{
+        display: flex;
+        font-size: var(--font-mobile-px);
+        align-items: center;
+        justify-content: center;
+    }
+    .temp{
+        padding: 10px 30px;
+        
+    }
+    .summary{
+        top: 30.7%;
+        padding: 10px 60px 10px 60px;
+        align-items: center;
+        margin: 1px;
+        
+    }
+    .summary span{
+        font-size: var(--font-mobile-px);
+    }
+    
+    .heading{
+        font-size: var(--font-mobile-heading) !important;
+    }
+    .back{
+        top: 74.5%;
+        left: 44.5%;
+    }
+    .back button{
+        font-size: var(--font-mobile-px);
+        padding: 10px 85px 10px 85px;
+    }
+    
+}
 
 
 
