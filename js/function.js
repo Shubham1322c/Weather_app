@@ -52,31 +52,31 @@ const geoLoc = () => {
                 console.log(response.list[0].weather[0].description);
                 console.log(response.list[0].weather[0].main);
                 if(main == "Rain" && description == "light rain"){
-                    img.src = "images/LightRain.png"
+                    img.src = "./images/LightRain.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;"
                 }
-                else if(main == "Clouds" && description == "overcast clouds"){
-                    img.src = "images/Cloudy.png"
+                else if(main == "Clouds"){
+                    img.src = "./images/Cloudy.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;"
                 }
                 else if(main == "Clouds" && description == "broken clouds"){
-                    img.src = "images/Cloudy.png"
+                    img.src = "./images/Cloudy.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;";
                 }
                 else if(main == "Clouds" && description == "scattered clouds"){
-                    img.src = "images/LowCloud.png"
+                    img.src = "./images/LowCloud.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;";
                 }
-                else if(main == "Clear" && description == "clear sky"){
-                    img.src = "images/Sunny.png"
+                else if(main == "Clear"){
+                    img.src = "./images/Sunny.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;";
