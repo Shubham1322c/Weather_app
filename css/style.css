@@ -1,11 +1,11 @@
-@import url(/css/utils.css);
+@import url(css/utils.css);
 *{
     margin: 0;
     padding: 0;
     
 }
 body{
-    background: url('/images/indexBg.jpg') center/cover no-repeat;
+    background: url('images/indexBg.jpg') center/cover no-repeat;
     height: 100vh;
     width: 100vw;
     
