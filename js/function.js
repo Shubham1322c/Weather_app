@@ -2,13 +2,13 @@ import {API_KEY} from "./config.js"; // import API_KEY
 //console.log(API_KEY);
 
 var backgrounds = [
-    'url(/images/resultBg1.jpg)',
-    'url(/images/resultBg2.jpg)',
-    'url(/images/resultBg3.jpg)',
-    'url(/images/resultBg4.jpg)',
-    'url(/images/resultBg5.jpg)',
-    'url(/images/resultBg6.jpg)',
-    'url(/images/resultBg7.jpg)'
+    'url(images/resultBg1.jpg)',
+    'url(images/resultBg2.jpg)',
+    'url(images/resultBg3.jpg)',
+    'url(images/resultBg4.jpg)',
+    'url(images/resultBg5.jpg)',
+    'url(images/resultBg6.jpg)',
+    'url(images/resultBg7.jpg)'
 ];
 
 function changeBackground() {
@@ -52,31 +52,31 @@ const geoLoc = () => {
                 console.log(response.list[0].weather[0].description);
                 console.log(response.list[0].weather[0].main);
                 if(main == "Rain" && description == "light rain"){
-                    img.src = "/images/LightRain.png"
+                    img.src = "images/LightRain.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;"
                 }
                 else if(main == "Clouds" && description == "overcast clouds"){
-                    img.src = "/images/Cloudy.png"
+                    img.src = "images/Cloudy.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;"
                 }
                 else if(main == "Clouds" && description == "broken clouds"){
-                    img.src = "/images/Cloudy.png"
+                    img.src = "images/Cloudy.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;";
                 }
                 else if(main == "Clouds" && description == "scattered clouds"){
-                    img.src = "/images/LowCloud.png"
+                    img.src = "images/LowCloud.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;";
                 }
                 else if(main == "Clear" && description == "clear sky"){
-                    img.src = "/images/Sunny.png"
+                    img.src = "images/Sunny.png"
                     img.alt = `${description}`;
                     weatherImg.appendChild(img);
                     img.style.cssText = "width:10vw; height: 15vh;";
