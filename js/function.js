@@ -1,4 +1,4 @@
-import {API_KEY} from "config.js"; // import API_KEY 
+import {API_KEY} from "./config.js"; // import API_KEY 
 //console.log(API_KEY);
 
 var backgrounds = [
