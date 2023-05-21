@@ -118,7 +118,7 @@ const delhi = () => {
                 document.getElementById("delhi-pressure").innerHTML += pressure + "mb";
                 let visibility = response.list[0].visibility / 1000;
                 document.getElementById("delhi-visibility").innerHTML += visibility + "Km";
-            console.log(response.list[0]);
+            // console.log(response.list[0]);
                 
         })
         .catch(err => console.error(err));
@@ -137,7 +137,7 @@ const chandighar = () => {
                 document.getElementById("chand-pressure").innerHTML += pressure + "mb";
                 let visibility = response.list[0].visibility / 1000;
                 document.getElementById("chand-visibility").innerHTML += visibility + "Km";
-            console.log(response.list[0]);
+            // console.log(response.list[0]);
                 
         })
         .catch(err => console.error(err));
