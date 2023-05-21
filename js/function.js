@@ -1,14 +1,14 @@
-import {API_KEY} from "./config.js"; // import API_KEY 
+import {API_KEY} from "config.js"; // import API_KEY 
 //console.log(API_KEY);
 
 var backgrounds = [
-    'url(./images/resultBg1.jpg)',
-    'url(./images/resultBg2.jpg)',
-    'url(./images/resultBg3.jpg)',
-    'url(./images/resultBg4.jpg)',
-    'url(./images/resultBg5.jpg)',
-    'url(./images/resultBg6.jpg)',
-    'url(./images/resultBg7.jpg)'
+    'url(images/resultBg1.jpg)',
+    'url(images/resultBg2.jpg)',
+    'url(images/resultBg3.jpg)',
+    'url(images/resultBg4.jpg)',
+    'url(images/resultBg5.jpg)',
+    'url(images/resultBg6.jpg)',
+    'url(images/resultBg7.jpg)'
 ];
 
 function changeBackground() {
