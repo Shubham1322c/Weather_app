@@ -156,7 +156,7 @@ const mumbai = () => {
                 document.getElementById("mumbai-pressure").innerHTML += pressure + "mb";
                 let visibility = response.list[0].visibility / 1000;
                 document.getElementById("mumbai-visibility").innerHTML += visibility + "Km";
-            console.log(response.list[0]);
+            // console.log(response.list[0]);
                 
         })
         .catch(err => console.error(err));
