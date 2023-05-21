@@ -16,7 +16,7 @@ function changeBackground() {
     document.body.style.backgroundImage = backgrounds[randomIndex];
 }
 
-// call the function when the page loads
+// call the function when the page loads to change the background image
 changeBackground();
 
 
