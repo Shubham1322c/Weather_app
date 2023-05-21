@@ -14,6 +14,7 @@ var backgrounds = [
 function changeBackground() {
     var randomIndex = Math.floor(Math.random() * backgrounds.length);
     document.body.style.backgroundImage = backgrounds[randomIndex];
+    document.body.style.backgroundImage = "center/cover no-repeat";
 }
 
 // call the function when the page loads to change the background image
